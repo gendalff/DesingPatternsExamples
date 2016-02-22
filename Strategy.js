@@ -3,41 +3,41 @@ STRATEGY
 The Stratery Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Stratery lets the algorithm vary independently from clients that use it.
 */
 
-var Charachter = function(title){
+var Charachter = function(title) {
     this.title = title;
-    this.setWeapon = function(weapon){
+    this.setWeapon = function(weapon) {
         this.weapon = weapon;
     }
-    this.fight = function(){
-        if(this.weapon){
+    this.fight = function() {
+        if (this.weapon) {
             console.log(title + ": " + this.weapon.useWeapon());
-        }else{
+        } else {
             console.log(title + ": I don't have any weapon! :(");
         }
     }
 }
 
-var Knife = function(){
-    this.useWeapon = function(){
+var Knife = function() {
+    this.useWeapon = function() {
         return "cutting with knife";
     }
 }
 
-var BowAndArrow = function(){
-    this.useWeapon = function(){
-        return"shooting an arrow with a bow";
+var BowAndArrow = function() {
+    this.useWeapon = function() {
+        return "shooting an arrow with a bow";
     }
 }
 
-var Axe = function(){
-    this.useWeapon = function(){
-        return"Chopping with an axe";
+var Axe = function() {
+    this.useWeapon = function() {
+        return "Chopping with an axe";
     }
 }
 
-var Sword = function(){
-    this.useWeapon = function(){
-        return"Swinging a sword";
+var Sword = function() {
+    this.useWeapon = function() {
+        return "Swinging a sword";
     }
 }
 
