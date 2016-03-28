@@ -1,7 +1,9 @@
 /*
-The Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate.
-    Factory Method lets a class defer instantiations to subclasses. 
-The Abstract Factory Pattern provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+The Factory Method Pattern defines an interface for creating an object, 
+    but lets subclasses decide which class to instantiate. Factory Method lets 
+    a class defer instantiations to subclasses. 
+The Abstract Factory Pattern provides an interface for creating families 
+    of related or dependent objects without specifying their concrete classes.
 */
 
 var PizzaStore = function(name){
@@ -52,7 +54,7 @@ Pizza.prototype.cut = function(){
 }
 Pizza.prototype.box = function(){
     console.log("Put into official boxes");
-    console.log("Enjoy your " + this.name + "pizza!")
+    console.log("Enjoy your " + this.name + "pizza!\n-------------------------------")
 }
 Pizza.prototype.getName = function(){
     return this.name;
